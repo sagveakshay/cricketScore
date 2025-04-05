@@ -33,7 +33,7 @@ export class AppComponent {
   }
 
   calcaulateScore(type: string, score: number) {
-    debugger
+
     if (type === 'NB' || type === 'WD') {
       this.arrayLength++
     }
@@ -62,7 +62,7 @@ export class AppComponent {
     else {
       this.scoreArray.push(type)
       if (type === 'W') {
-        debugger
+
         this.arrayofWickets.push(score)
         this.totalWickets = this.arrayofWickets.reduce((acc: any, cur: any) => acc + Number(cur), 0)
       }

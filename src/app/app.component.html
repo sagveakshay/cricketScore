@@ -42,22 +42,22 @@
       <div class="row mt-2">
         <div class="col">
           <button [disabled]="hideButton" type="button" (click)="calcaulateScore('DB',0)"
-            class="btn btn-outline-success me-3">Dot
+            class="btn btn-outline-success me-3 mb-2">Dot
             Ball</button>
-          <button [disabled]="hideButton" type="button" (click)="calcaulateScore('WD',1)"
-            class="btn btn-outline-success me-3">Wide
+          <button [disabled]=" hideButton" type="button" (click)="calcaulateScore('WD',1)"
+            class="btn btn-outline-success me-3 mb-2">Wide
             Ball</button>
-          <button [disabled]="hideButton" type="button" (click)="calcaulateScore('W',1)"
-            class="btn btn-outline-success me-3">Wicket</button>
-          <button [disabled]="hideButton" type="button" (click)="calcaulateScore('NB',1)"
-            class="btn btn-outline-success me-3">No
+          <button [disabled]=" hideButton" type="button" (click)="calcaulateScore('W',1)"
+            class="btn btn-outline-success me-3 mb-2">Wicket</button>
+          <button [disabled]=" hideButton" type="button" (click)="calcaulateScore('NB',1)"
+            class="btn btn-outline-success me-3 mb-2">No
             Ball</button>
-          <button [disabled]="!hideButton" type="button" (click)="calcaulateScore('newOver',1)"
-            class="btn btn-outline-secondary me-3">New Over
+          <button [disabled]=" !hideButton" type="button" (click)="calcaulateScore('newOver',1)"
+            class="btn btn-outline-secondary me-3 mb-2">New Over
           </button>
         </div>
       </div>
-      <div class="row mt-4">
+      <div class=" row mt-4">
         <div class="col">
           <h2>Current Score: {{totalRuns??0}} Runs and {{totalWickets??0}} Wickets</h2>
           <h2>Ball :{{this.ballArray.length??0}}</h2>
